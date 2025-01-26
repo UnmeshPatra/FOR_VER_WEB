@@ -10,10 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.3",
     "react-toastify": "^11.0.3"
+=======
+    "@tailwindcss/vite": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.3",
+    "react-toastify": "^11.0.3",
+    "tailwindcss": "^4.0.0"
+>>>>>>> ac3a7cc (Initial commit)
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
