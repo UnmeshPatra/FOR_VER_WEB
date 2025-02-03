@@ -1,12 +1,12 @@
 import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { ShopContext } from '../Context/ShopContext';
+import { ShopContext } from '../context/ShopContext';
 import { assets } from '../assets/assets';
 import RelatedProducts from '../components/RelatedProducts'
 
 const Product = () => {
   const { productId } = useParams();
-  const { products, currency, addToCart } = useContext(ShopContext);
+  const { products, currency,addtoCart} = useContext(ShopContext);
   const [productsData, setProductsData] = useState(false);
   const [image, setImage] = useState('');
   const [size, setSize] = useState('');
@@ -80,7 +80,7 @@ const Product = () => {
 
           <div className="flex flex-col gap-4 my-8">
             <p className="">Select Size</p>
-            <div className="flex gap-2">
+            <div  className="flex gap-2 ">
               {productsData.sizes.map((item, index) => (
                 <button
                   key={index}
@@ -98,7 +98,7 @@ const Product = () => {
           </div>
 
           <button
-            onClick={() => addToCart(productsData._id, size)}
+            onClick={() => { addtoCart(productsData._id, size)}}
             className="bg-black text-white py-3 px-8 text-sm active:bg-gray-700"
           >
             ADD TO CART
@@ -154,3 +154,4 @@ const Product = () => {
 };
 
 export default Product;
+
