@@ -83,6 +83,19 @@ const registerUser = async (req, res) => {
 
 const adminLogin = async (req, res) => {
   // Implement admin login logic here
+  try {
+    const {email,password} = req.body;
+
+    if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD) {
+      const token = jwt.sign(email+password,process.env.JWT_SECRET)
+      res.json({success:true,token})
+    } else {
+      console.log(error);      
+      res.json({success:false,message: error.message });      
+    }
+  } catch (error) {
+    
+  }
 };
 
 export { loginUser, registerUser, adminLogin };
