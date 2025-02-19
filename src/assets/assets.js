@@ -91,7 +91,7 @@ export const assets = {
     about_img,
     contact_img,
     razorpay_logo,
-    stripe_logo,
+    stripe_logo,   
     cross_icon
 }
 
@@ -180,6 +180,9 @@ export const products = [
         date: 1716621542448,
         bestseller: false
     },
+
+
+    
     {
         _id: "aaaah",
         name: "Men Round Neck Pure Cotton T-shirt",

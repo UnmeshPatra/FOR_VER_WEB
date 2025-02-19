@@ -11,20 +11,16 @@ const Product = () => {
   const [image, setImage] = useState('');
   const [size, setSize] = useState('');
 
-  const fetchProductsData = async () => {
-    products.map((product) => {
-      if (product._id === productId) {
-        setProductsData(product);
-        setImage(product.image[0]);
-
-        return null;
-      }
-    });
-  };
-
   useEffect(() => {
-    fetchProductsData();
+    if (products && products.length > 0) {
+      const product = products.find((p) => p._id === productId);
+      if (product) {
+        setProductsData(product);
+        setImage(product.image?.[0] || '');  // Ensure image exists
+      }
+    }
   }, [productId, products]);
+  
 
   return productsData ? (
     <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">
@@ -35,7 +31,7 @@ const Product = () => {
         <div className="flex-1 flex flex-col-reverse gap-3 sm:flex-row ">
           {/* ---------------------- List images ----------------------*/}
           <div className="flex sm:flex-col  overflow-x-auto sm:overflow-y-scroll justify-between  sm:justify-normal sm:w-[18.7%] w-full">
-            {productsData.image.map((item, index) => (
+            {productsData?.image?.map((item, index) => (
               <img
                 key={index}
                 src={item}
@@ -81,7 +77,7 @@ const Product = () => {
           <div className="flex flex-col gap-4 my-8">
             <p className="">Select Size</p>
             <div  className="flex gap-2 ">
-              {productsData.sizes.map((item, index) => (
+              {productsData.size.map((item, index) => (
                 <button
                   key={index}
                   onClick={() => {
