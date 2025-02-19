@@ -12,3 +12,4 @@ export const assets = {
     parcel_icon
 }
 
+
