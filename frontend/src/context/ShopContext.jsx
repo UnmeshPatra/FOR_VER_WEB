@@ -128,7 +128,7 @@ const ShopContextProvider = (props) =>{
         }
     }
 
-<<<<<<< HEAD
+
     const getUserCart = async(token)=>{
         try {
             const response = await axios.post(backendUrl + '/api/cart/get',{},{headers:{token}})
@@ -141,9 +141,8 @@ const ShopContextProvider = (props) =>{
             toast.error(error.messsage)            
         }
     }
-=======
     
->>>>>>> origin/main
+
 
     useEffect(()=>{
         getProductData()
@@ -152,10 +151,10 @@ const ShopContextProvider = (props) =>{
     useEffect(()=>{
         if (!token && localStorage.getItem('token')) {
             setToken(localStorage.getItem('token'))
-<<<<<<< HEAD
+
             getUserCart(localStorage.getItem('token'))
-=======
->>>>>>> origin/main
+
+
         }
     },[])
 
