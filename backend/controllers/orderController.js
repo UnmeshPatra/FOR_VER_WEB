@@ -1,5 +1,6 @@
 
 import orderModel from "../models/orderModel.js"
+import userModel from "../models/userModel.js"
 // placing order using cod method 
 
 const placeOrder = async (req,res) =>{
@@ -11,7 +12,7 @@ const placeOrder = async (req,res) =>{
             items,
             amount,
             address,
-            paymentMethod:"COD",
+            paymentMethod:"cod",
             paymet:false,
             date:Date.now(),
         }
@@ -49,7 +50,7 @@ const allOrders = async (req,res)=>{
 
 //user order data for frontend 
 const userOrders = async (req,res)=>{
-
+    
 }
 
 //update order status from admin panel 
