@@ -1,0 +1,18 @@
+[33m97e2682[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: commit: new
+[33mf160989[m HEAD@{1}: reset: moving to HEAD~1
+[33m5053033[m HEAD@{2}: commit: ignore it
+[33mf160989[m HEAD@{3}: checkout: moving from master to main
+[33m3d7d19e[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{4}: checkout: moving from main to master
+[33mf160989[m HEAD@{5}: checkout: moving from master to main
+[33m3d7d19e[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{6}: checkout: moving from main to master
+[33mf160989[m HEAD@{7}: commit (merge): Your commit message
+[33ma5f6c51[m HEAD@{8}: checkout: moving from master to main
+[33m3d7d19e[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{9}: commit: some
+[33md0f649c[m HEAD@{10}: commit: done
+[33m03272d9[m HEAD@{11}: commit: front
+[33ma957b62[m HEAD@{12}: commit: front end done
+[33m84d4b8f[m HEAD@{13}: commit: cart
+[33m639a36a[m HEAD@{14}: commit: done
+[33mac27e8a[m HEAD@{15}: commit: done
+[33mc9b5bc0[m HEAD@{16}: commit: things
+[33m86d589f[m HEAD@{17}: commit (initial): Initiall
